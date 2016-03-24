@@ -1,0 +1,10 @@
+<p>Partial Two</p>
+<ul ng-repeat="item in items | modulo:2 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:2:1 ">
+  <li>{{item}}</li>
+</ul>

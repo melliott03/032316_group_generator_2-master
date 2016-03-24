@@ -1,0 +1,17 @@
+<p>Partial Three</p>
+
+<ul ng-repeat="item in items | modulo:3 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:3:1 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:3:2 ">
+  <li>{{item}}</li>
+</ul>

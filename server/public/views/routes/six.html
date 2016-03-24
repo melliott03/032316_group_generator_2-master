@@ -1,0 +1,35 @@
+<p>Partial Six</p>
+
+<ul ng-repeat="item in items | modulo:4 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:4:1 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:4:2 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:4:3 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:5:4 ">
+  <li>{{item}}</li>
+</ul>
+
+<hr>
+
+<ul ng-repeat="item in items | modulo:6:5 ">
+  <li>{{item}}</li>
+</ul>

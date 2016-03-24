@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>All of Kappa and Their Pictures</title>
+    <script type="text/javascript" src="/assets/vendors/angular.js"></script>
+    <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/styles/stylesheet.css" /> -->
+  </head>
+  <body>
+    <div ng-controller="Ctrl">
+      <h1>Here's all of Kappa!!</h1>
+
+      <button class="button-number 2" ng-click="2">2</button>
+      <button class="button-number 3">3</button>
+      <button class="button-number 4">4</button>
+      <button class="button-number 5">5</button>
+      <button class="button-number 6">6</button>
+      <button class="button-number 7">7</button>
+      <button class="button-number 8">8</button>
+      <button class="button-number 9">9</button>
+      <button class="button-number 10">10</button>
+      <button class="button-number 11">11</button>
+      <button class="button-refresh">Refresh</button>
+
+
+
+                                      <!-- Dynamically Change Limit -->
+
+  <div ng-controller="Ctrl">
+    <ul ng-repeat="item in items | modulo:3 ">
+      <li>{{item}}</li>
+    </ul>
+
+    <hr>
+
+    <ul ng-repeat="item in items | modulo:3:1 ">
+      <li>{{item}}</li>
+    </ul>
+
+    <hr>
+
+    <ul ng-repeat="item in items | modulo:3:2 ">
+      <li>{{item}}</li>
+    </ul>
+
+
+<!--
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 0">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 1">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 2">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 3">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 4">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 5">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 6">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 7">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 8">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 9">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 10">
+        <p>
+          {{ kappans }}
+        </p>
+      </div>
+      <hr />
+      <div ng-repeat="kappans in kappaArray" ng-if = "$index % 5 == 11">
+        <p>
+          {{ kappans }}
+        </p>
+      </div> -->
+
+    </div>
+  </body>
+</html>
