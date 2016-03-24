@@ -6,11 +6,15 @@
     <script type="text/javascript" src="/assets/vendors/angular.js"></script>
     <script type="text/javascript" src="/assets/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers/ourController.js"></script>
+
     <!-- <link rel="stylesheet" type="text/css" href="/assets/styles/stylesheet.css" /> -->
   </head>
-  <body ng-controller="Ctrl">
-    <h1>Here's all of Kappa!!</h1>
+  <body ng-controller="OurController">
+    <h1>Kappa Teams!</h1>
     <ng-include src="'/views/partials/nav.html'"></ng-include>
-    <main ng-view></main>
+    <input type='checkbox' ng-model="hideKappens">refresh
+    <main ng-view ng-hide="hideKappens"></main>
   </body>
+
 </html>
