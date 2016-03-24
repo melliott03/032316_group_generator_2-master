@@ -13,7 +13,7 @@
   <body ng-controller="OurController">
     <h1>Kappa Teams!</h1>
     <ng-include src="'/views/partials/nav.html'"></ng-include>
-    <input type='checkbox' ng-model="hideKappens">refresh
+    <button ng-click="someFunction(data)" ng-model="hideKappens">refresh</button>
     <main ng-view ng-hide="hideKappens"></main>
   </body>
 

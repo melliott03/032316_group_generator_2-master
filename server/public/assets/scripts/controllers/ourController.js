@@ -16,8 +16,18 @@ function shuffle(array) {
   return array;
 }
 
+
+
       myApp.controller('OurController', function($scope){
-      $scope.items = ['socks','shoes','cats','dogs','urrg','window','doors','front','back','lion','tiger'];
+
+        $scope.numberArray = [2,3,4,5,6,7,8,9,10,11];
+
+        $scope.someFunction=function(data){
+          console.log(data);
+        }
+      $scope.items = ["Enrique",
+        "Tracey","Carl","Joette","Jeremy","Kenzie","Aaron","Evan","Biz","Brady","Roman","Thomas","Miles","Michelle","Neil","Hank","Mike E." ,"Mark"
+      ];
         console.log('Ctrl');
           $scope.items = shuffle($scope.items);
       }).
